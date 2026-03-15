@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewed & Bold — Coffee Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="top">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">Brewed <em>&amp;</em> Bold</span>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn">
+        <span class="cart-icon">🛒</span>
+        Cart <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-sub">Est. 2019 · Specialty Coffee</p>
+      <h1>Where every<br /><em>cup tells</em><br />a story.</h1>
+      <a href="#menu" class="btn-primary">Explore Menu</a>
+    </div>
+    <div class="hero-img">
+      <img src="https://i.pinimg.com/1200x/e8/8c/96/e88c963b93c4ee2f3481b3576e2c9395.jpg" alt="Coffee" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-badge">Our Story</div>
+      <h2>More than coffee —<br /><em>a ritual.</em></h2>
+      <p>Welcome to our cozy corner of the world. We source the finest single-origin beans, roast in small batches, and brew with obsession. Every visit is an experience crafted for your senses.</p>
+      <div class="about-stats">
+        <div><strong>12+</strong><span>Origins</span></div>
+        <div><strong>4.9★</strong><span>Rating</span></div>
+        <div><strong>8yrs</strong><span>Roasting</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="products" id="menu">
+    <div class="products-header">
+      <h2>Our Coffee Menu</h2>
+      <p>Handcrafted with love, served with pride.</p>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hot">Hot</button>
+        <button class="filter-btn" data-filter="cold">Cold</button>
+        <button class="filter-btn" data-filter="specialty">Specialty</button>
+      </div>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+      <div class="card" data-category="hot">
+        <div class="card-img-wrap">
+          <img src="https://i.pinimg.com/1200x/e8/8c/96/e88c963b93c4ee2f3481b3576e2c9395.jpg" alt="Espresso" />
+          <span class="tag">Hot</span>
+        </div>
+        <div class="card-body">
+          <h3>Espresso</h3>
+          <p>Bold and intense — hot water forced through finely-ground beans. The purist's choice.</p>
+          <div class="card-footer">
+            <span class="price">₱30.00</span>
+            <button class="add-btn" data-name="Espresso" data-price="30.00">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="hot">
+        <div class="card-img-wrap">
+          <img src="https://i.pinimg.com/1200x/f8/56/d2/f856d2d30045e34f7a3d7438d81c5141.jpg" alt="Latte" />
+          <span class="tag">Hot</span>
+        </div>
+        <div class="card-body">
+          <h3>Latte</h3>
+          <p>Smooth espresso meets velvety steamed milk. Topped with delicate microfoam art.</p>
+          <div class="card-footer">
+            <span class="price">₱40.50</span>
+            <button class="add-btn" data-name="Latte" data-price="40.50">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="hot">
+        <div class="card-img-wrap">
+          <img src="https://i.pinimg.com/736x/4d/e4/0c/4de40c8bbd7ca5c9a76587faf386d444.jpg" alt="Cappuccino" />
+          <span class="tag">Hot</span>
+        </div>
+        <div class="card-body">
+          <h3>Cappuccino</h3>
+          <p>Equal parts espresso, steamed milk, and thick foam. Classic Italian perfection.</p>
+          <div class="card-footer">
+            <span class="price">₱40.00</span>
+            <button class="add-btn" data-name="Cappuccino" data-price="40.00">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="cold">
+        <div class="card-img-wrap">
+          <img src="https://i.pinimg.com/1200x/a0/8b/61/a08b618b6bbe45c5f3ae62ffdaff1d7d.jpg" alt="Cold Brew" />
+          <span class="tag cold">Cold</span>
+        </div>
+        <div class="card-body">
+          <h3>Cold Brew</h3>
+          <p>Steeped 18 hours in cold water for a silky smooth, never bitter experience.</p>
+          <div class="card-footer">
+            <span class="price">₱5.00</span>
+            <button class="add-btn" data-name="Cold Brew" data-price="50.00">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="cold">
+        <div class="card-img-wrap">
+          <img src="https://i.pinimg.com/736x/4d/e0/68/4de068124212961d6481e6c631774053.jpg" alt="Iced Latte" />
+          <span class="tag cold">Cold</span>
+        </div>
+        <div class="card-body">
+          <h3>Iced Latte</h3>
+          <p>Chilled espresso poured over ice with fresh cold milk. Summer in a glass.</p>
+          <div class="card-footer">
+            <span class="price">₱50.50</span>
+            <button class="add-btn" data-name="Iced Latte" data-price="50.50">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="specialty">
+        <div class="card-img-wrap">
+          <img src="https://i.pinimg.com/1200x/7f/7c/0a/7f7c0a441577459d9a0a01ee28b59cc5.jpg" alt="Caramel Macchiato" />
+          <span class="tag specialty">Specialty</span>
+        </div>
+        <div class="card-body">
+          <h3>Caramel Macchiato</h3>
+          <p>Vanilla-infused milk, bold espresso, and a drizzle of golden caramel. Indulge.</p>
+          <div class="card-footer">
+            <span class="price">₱60.00</span>
+            <button class="add-btn" data-name="Caramel Macchiato" data-price="60.00">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Visit Us</h2>
+    <p>Manila, Philippines · Open daily 7am – 9pm</p>
+    <p>📞 09123 456 789 &nbsp;|&nbsp; ✉️ hello@brewedandbold.com</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>☕ &copy; 2025 Brewed &amp; Bold Coffee Shop. All rights reserved.</p>
+    <a href="#top" class="back-top">↑ Back to top</a>
+  </footer>
+
+  <!-- CART MODAL -->
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-modal">
+      <div class="cart-modal-header">
+        <h3>Your Order</h3>
+        <button id="closeCart">✕</button>
+      </div>
+      <ul class="cart-list" id="cartList"></ul>
+      <div class="cart-total">
+        Total: <strong id="cartTotal">₱0.00</strong>
+      </div>
+      <button class="btn-primary checkout-btn" id="checkoutBtn">Place Order</button>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
