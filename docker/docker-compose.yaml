@@ -4,4 +4,4 @@ services:
   app:
     image: joshuadev101/my-coffee-shop
     ports:
-      - "80:80"
+      - "8000:80"
