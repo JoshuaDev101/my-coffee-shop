@@ -1,0 +1,7 @@
+name: my-coffee-shop
+
+services:
+  app:
+    image: joshuadev101/my-coffee-shop
+    ports:
+      - "8000:80"
